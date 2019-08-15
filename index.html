@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html style="width: 100%;height: 100%">
+<head>
+	<script src="./js/lottie.js"></script>
+</head>
+<body style="margin: 0;height: 100%;background-color: #000">
+
+<h1 style="text-align: center;color: #ddd">beautiful-animation</h1>
+<p style="text-align: center;color: #ddd">lottie-web and lottiefiles animation</p>
+<p style="text-align: center">
+	<a style="color: #FF59F6" target="_blank" href="https://github.com/airbnb/lottie-web">lottie-web</a>
+	<a style="color: #FF59F6" target="_blank" href="https://lottiefiles.com">lottiefiles</a>
+</p>
+
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin1"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin2"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin3"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin4"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin5"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin6"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin7"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin8"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin9"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin10"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin11"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin12"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin13"></div>
+<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin14"></div>
+
+<p style="text-align: center;margin-bottom: 40px">
+	<a style="color: #0FFF22" target="_blank" href="https://github.com/sliwei/beautiful-animation">© slwei</a>
+</p>
+
+<script>
+
+	var list = [
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/4946-coin.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/5670-sale-banner.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/6778-siri-style-loading.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/6951-success.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/6952-fail.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/7192-404.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/7603.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/7604.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/7734-water-filling-glass-orb.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/7735-douban-loading.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/7743-loading-loop-animation.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/7833-voice.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/7928-god-of-wealth.json',
+		'http://react-redux-hooks-pro.bstu.cn/json/adrock/7929-run-man-run.json',
+	];
+
+	var animData1 = {wrapper: document.getElementById('bodymovin1'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[0]};
+	var anim1 = bodymovin.loadAnimation(animData1);
+	bodymovin.setSubframeRendering(false);
+
+	var animData2 = {wrapper: document.getElementById('bodymovin2'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[1]};
+	var anim2 = bodymovin.loadAnimation(animData2);
+	bodymovin.setSubframeRendering(false);
+
+	var animData3 = {wrapper: document.getElementById('bodymovin3'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[2]};
+	var anim3 = bodymovin.loadAnimation(animData3);
+	bodymovin.setSubframeRendering(false);
+
+	var animData4 = {wrapper: document.getElementById('bodymovin4'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[3]};
+	var anim4 = bodymovin.loadAnimation(animData4);
+	bodymovin.setSubframeRendering(false);
+
+	var animData5 = {wrapper: document.getElementById('bodymovin5'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[4]};
+	var anim5 = bodymovin.loadAnimation(animData5);
+	bodymovin.setSubframeRendering(false);
+
+	var animData6 = {wrapper: document.getElementById('bodymovin6'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[5]};
+	var anim6 = bodymovin.loadAnimation(animData6);
+	bodymovin.setSubframeRendering(false);
+
+	var animData7 = {wrapper: document.getElementById('bodymovin7'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[6]};
+	var anim7 = bodymovin.loadAnimation(animData7);
+	bodymovin.setSubframeRendering(false);
+
+	var animData8 = {wrapper: document.getElementById('bodymovin8'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[7]};
+	var anim8 = bodymovin.loadAnimation(animData8);
+	bodymovin.setSubframeRendering(false);
+
+	var animData9 = {wrapper: document.getElementById('bodymovin9'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[8]};
+	var anim9 = bodymovin.loadAnimation(animData9);
+	bodymovin.setSubframeRendering(false);
+
+	var animData10 = {wrapper: document.getElementById('bodymovin10'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[9]};
+	var anim10 = bodymovin.loadAnimation(animData10);
+	bodymovin.setSubframeRendering(false);
+
+	var animData11 = {wrapper: document.getElementById('bodymovin11'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[10]};
+	var anim11 = bodymovin.loadAnimation(animData11);
+	bodymovin.setSubframeRendering(false);
+
+	var animData12 = {wrapper: document.getElementById('bodymovin12'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[11]};
+	var anim12 = bodymovin.loadAnimation(animData12);
+	bodymovin.setSubframeRendering(false);
+
+	var animData13 = {wrapper: document.getElementById('bodymovin13'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[12]};
+	var anim13 = bodymovin.loadAnimation(animData13);
+	bodymovin.setSubframeRendering(false);
+
+	var animData14 = {wrapper: document.getElementById('bodymovin14'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[13]};
+	var anim14 = bodymovin.loadAnimation(animData14);
+	bodymovin.setSubframeRendering(false);
+
+</script>
+</body>
+</html>
