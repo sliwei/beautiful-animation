@@ -1,7 +1,29 @@
 <!DOCTYPE html>
-<html style="width: 100%;height: 100%">
+<html lang="en" style="width: 100%;height: 100%">
+
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>beautiful-animation</title>
 	<script src="./js/lottie.js"></script>
+	<style>
+		.box {
+			padding: 10px;
+		}
+		.box:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.items {
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			background-color: #fff;
+			float: left;
+		}
+	</style>
 </head>
 <body style="margin: 0;height: 100%;background-color: #000">
 
@@ -12,20 +34,24 @@
 	<a style="color: #FF59F6" target="_blank" href="https://lottiefiles.com">lottiefiles</a>
 </p>
 
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin1"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin2"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin3"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin4"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin5"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin6"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin7"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin8"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin9"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin10"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin11"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin12"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin13"></div>
-<div style="width:200px;border: 1px solid #ddd;margin: 10px auto;background-color: #fff" id="bodymovin14"></div>
+<div class="box">
+	<div class="items" id="bodymovin1"></div>
+	<div class="items" id="bodymovin2"></div>
+	<div class="items" id="bodymovin3"></div>
+	<div class="items" id="bodymovin4"></div>
+	<div class="items" id="bodymovin5"></div>
+	<div class="items" id="bodymovin6"></div>
+	<div class="items" id="bodymovin7"></div>
+	<div class="items" id="bodymovin8"></div>
+	<div class="items" id="bodymovin9"></div>
+	<div class="items" id="bodymovin10"></div>
+	<div class="items" id="bodymovin11"></div>
+	<div class="items" id="bodymovin12"></div>
+	<div class="items" id="bodymovin13"></div>
+	<div class="items" id="bodymovin14"></div>
+	<div class="items" id="bodymovin15"></div>
+	<div class="items" id="bodymovin16"></div>
+</div>
 
 <p style="text-align: center;margin-bottom: 40px">
 	<a style="color: #0FFF22" target="_blank" href="https://github.com/sliwei/beautiful-animation">© slwei</a>
@@ -47,64 +73,17 @@
 		'./json/7833-voice.json',
 		'./json/7928-god-of-wealth.json',
 		'./json/7929-run-man-run.json',
+		'./json/3193-404-page.json',
+		'./json/13266-merry-chirstmas.json',
 	];
 
-	var animData1 = {wrapper: document.getElementById('bodymovin1'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[0]};
-	var anim1 = bodymovin.loadAnimation(animData1);
+	var base;
+	list.map((item, i) => {
+		var data = {wrapper: document.getElementById(`bodymovin${i+1}`), animType: 'svg', loop: true, prerender: true, autoplay: true, path: item};
+		base = bodymovin.loadAnimation(data);
+	});
 	bodymovin.setSubframeRendering(false);
-
-	var animData2 = {wrapper: document.getElementById('bodymovin2'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[1]};
-	var anim2 = bodymovin.loadAnimation(animData2);
-	bodymovin.setSubframeRendering(false);
-
-	var animData3 = {wrapper: document.getElementById('bodymovin3'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[2]};
-	var anim3 = bodymovin.loadAnimation(animData3);
-	bodymovin.setSubframeRendering(false);
-
-	var animData4 = {wrapper: document.getElementById('bodymovin4'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[3]};
-	var anim4 = bodymovin.loadAnimation(animData4);
-	bodymovin.setSubframeRendering(false);
-
-	var animData5 = {wrapper: document.getElementById('bodymovin5'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[4]};
-	var anim5 = bodymovin.loadAnimation(animData5);
-	bodymovin.setSubframeRendering(false);
-
-	var animData6 = {wrapper: document.getElementById('bodymovin6'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[5]};
-	var anim6 = bodymovin.loadAnimation(animData6);
-	bodymovin.setSubframeRendering(false);
-
-	var animData7 = {wrapper: document.getElementById('bodymovin7'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[6]};
-	var anim7 = bodymovin.loadAnimation(animData7);
-	bodymovin.setSubframeRendering(false);
-
-	var animData8 = {wrapper: document.getElementById('bodymovin8'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[7]};
-	var anim8 = bodymovin.loadAnimation(animData8);
-	bodymovin.setSubframeRendering(false);
-
-	var animData9 = {wrapper: document.getElementById('bodymovin9'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[8]};
-	var anim9 = bodymovin.loadAnimation(animData9);
-	bodymovin.setSubframeRendering(false);
-
-	var animData10 = {wrapper: document.getElementById('bodymovin10'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[9]};
-	var anim10 = bodymovin.loadAnimation(animData10);
-	bodymovin.setSubframeRendering(false);
-
-	var animData11 = {wrapper: document.getElementById('bodymovin11'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[10]};
-	var anim11 = bodymovin.loadAnimation(animData11);
-	bodymovin.setSubframeRendering(false);
-
-	var animData12 = {wrapper: document.getElementById('bodymovin12'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[11]};
-	var anim12 = bodymovin.loadAnimation(animData12);
-	bodymovin.setSubframeRendering(false);
-
-	var animData13 = {wrapper: document.getElementById('bodymovin13'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[12]};
-	var anim13 = bodymovin.loadAnimation(animData13);
-	bodymovin.setSubframeRendering(false);
-
-	var animData14 = {wrapper: document.getElementById('bodymovin14'), animType: 'svg', loop: true, prerender: true, autoplay: true, path: list[13]};
-	var anim14 = bodymovin.loadAnimation(animData14);
-	bodymovin.setSubframeRendering(false);
-
+	base.stop()
 </script>
 </body>
 </html>
